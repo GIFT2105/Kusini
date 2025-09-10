@@ -141,7 +141,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3 ">
         
-                <img src="/Kusiniwater_logo.png" alt="Kusini Water Logo" className="h-16 sm:hidden md:h-16 object-contain" />
+                <img src="/Kusiniwater_logo.png" alt="Kusini Water Logo" className={`h-16 object-contain ${isScrolled ? 'block' : 'hidden md:block'}`} />
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-white font-medium hover:text-blue-200 transition-colors text-shadow">Home</a>
@@ -184,23 +184,23 @@ export default function Home() {
           }`}>
            
           </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6 text-shadow">
+          <h2 className="text-xl md:text-4xl font-semibold text-white mb-6 text-shadow">
             Advanced Water Filtration for Homes & Enterprises
           </h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto text-shadow">
+          <p className="text-lg text-blue-100 mb-12 max-w-3xl mx-auto text-shadow">
             Cleaner, safer water – delivered directly to your taps in Dikgale and surrounding areas.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
               onClick={handleQuoteClick}
-              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-semibold text-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl btn-water"
+              className="px-4 py-2 md:px-8 md:py-4 xl:px-8 xl:py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-semibold text-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl btn-water"
             >
               Get a Free Quote
             </button>
             <button 
               onClick={() => document.getElementById('services').scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold text-lg hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300"
+              className="px-4 py-2 md:px-8 md:py-4 xl:px-8 xl:py-4 border-2 border-white text-white rounded-full font-semibold text-lg hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300"
             >
               Explore Our Systems
             </button>
@@ -231,7 +231,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl md:text-5xl xl:text-5xl font-bold text-gray-800 mb-6">
               About Kusini Water
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-8"></div>
@@ -297,7 +297,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl md:text-5xl xl:text-5xl font-bold text-gray-800 mb-6">
               Our Services
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-8"></div>
@@ -395,7 +395,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl md:text-5xl xl:text-5xl font-bold text-gray-800 mb-6">
               Our Successful Installations
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-8"></div>
@@ -442,7 +442,7 @@ export default function Home() {
       {/* Why Choose Us */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white animate-on-scroll">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${showAnimations ? 'animate-float-medium' : ''}`}>
+          <h2 className={`text-3xl md:text-5xl xl:text-5xl font-bold mb-6 ${showAnimations ? 'animate-float-medium' : ''}`}>
             Why Choose Kusini Water?
           </h2>
           <div className="w-24 h-1 bg-white mx-auto mb-12"></div>
@@ -503,11 +503,11 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className={`text-4xl md:text-5xl font-bold text-gray-800 mb-6 ${showAnimations ? 'animate-float-medium' : ''}`}>
+            <h2 className={`text-3xl md:text-5xl xl:text-5xl font-bold text-gray-800 mb-6 ${showAnimations ? 'animate-float-medium' : ''}`}>
               Contact Kusini Water
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-8"></div>
-            <p className="text-2xl text-blue-600 mb-8">
+            <p className="text-xl text-blue-600 mb-8">
               Let's bring safe water to your home or business
             </p>
           </div>
