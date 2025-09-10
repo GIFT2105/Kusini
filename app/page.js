@@ -141,7 +141,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3 ">
         
-                <img src="/Kusiniwater_logo.png" alt="Kusini Water Logo" className="h-16 md:h-16 object-contain" />
+                <img src="/Kusiniwater_logo.png" alt="Kusini Water Logo" className="h-16 sm:hidden md:h-16 object-contain" />
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-white font-medium hover:text-blue-200 transition-colors text-shadow">Home</a>
@@ -255,7 +255,7 @@ export default function Home() {
             <div className={`grid grid-cols-2 gap-4 ${showAnimations ? 'animate-float-fast' : ''}`}>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl">
                 <div className="w-12 h-12 bg-blue-500 rounded-full mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">10+</span>
+                  <span className="text-white font-bold text-xl">5+</span>
                 </div>
                 <h3 className="font-semibold text-gray-800 mb-2">Years Experience</h3>
                 <p className="text-gray-600 text-sm">Serving the community</p>
